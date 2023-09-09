@@ -1,0 +1,36 @@
+/* src/Home.css */
+.title {
+  width: 586px;
+  height: 48px;
+  position: absolute;
+  top: 338px; /* Change the top position to 338px */
+  left: 240px;
+  font-family: 'DM Serif Text', serif;
+  font-weight: 400;
+  font-size: 73px;
+  color: #3E3E3E;
+  letter-spacing: -2%;
+  line-height: 100.08px;
+  vertical-align: text-top;
+}
+
+.text {
+  width: 616px;
+  height: 200px;
+  position: absolute;
+  top: 320px;
+  left: 240px;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: #3E3E3E;
+  line-height: 50px;
+}
+
+.get-started {
+  width: 238px;
+  height: 64px;
+  position: absolute;
+  top: 580px;
+  left: 242px;
+}
