@@ -1,0 +1,1 @@
+CALL legoom.createNutritionTable;

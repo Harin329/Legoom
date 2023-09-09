@@ -4,17 +4,23 @@ services:
   db:
     build: ./database
     container_name: legoom_db
-    command: --default-authentication-plugin=mysql_native_password
+    command: 
+      --default-authentication-plugin=mysql_native_password
+      --secure_file_priv=''
+      --local_infile=1
     restart: always
     environment:
-      MYSQL_ROOT_PASSWORD: root
-      MYSQL_DATABASE: legoom
-      MYSQL_USER: user
-      MYSQL_PASSWORD: root
+      MYSQL_ROOT_PASSWORD: 'root'
+      MYSQL_DATABASE: 'legoom'
+      MYSQL_USER: 'user'
+      MYSQL_PASSWORD: 'root'
     ports:
       - "3306:3306"
+    expose:
+      - '3306'
     volumes: 
       - ./database/data:/var/lib/mysql
+      - ./database/init.sql:/docker-entrypoint-initdb.d/~init.sql
 
   server:
     build: ./backend

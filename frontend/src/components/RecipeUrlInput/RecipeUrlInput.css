@@ -3,9 +3,7 @@
 .recipe-input-container {
     width: 504px;
     height: 35px;
-    position: absolute;
-    top: 272px;
-    left: 240px;
+    margin-bottom: 20px;
     border-radius: 10px;
     padding: 17px 38px;
     background-color: #F1F1F1; /* Gray background color */

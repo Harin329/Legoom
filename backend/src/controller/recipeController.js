@@ -37,6 +37,8 @@ export default class ProjectController {
 
   addIngredient(req) {
     return new Promise((resolve, reject) => {
+      const ingredients = req.body.ingredients;
+      resolve({ message: ingredients });
       const RecipeModel = new Recipe();
 
       // RecipeModel.addMeal((err, result) => {
