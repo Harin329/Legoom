@@ -1,5 +1,5 @@
 import { Router } from "express";
-import RecipeController from "../controllers/recipeController.js";
+import RecipeController from "../controller/recipeController.js";
 
 const router = Router();
 const recipeController = new RecipeController();
@@ -7,9 +7,9 @@ const recipeController = new RecipeController();
 // Retrives nutrition from recipe and stores into database
 // Input: Recipe URL
 // Output: Newly added nutrition macros
-router.post("/", (_, res) => {
+router.post("/", (req, res) => {
     recipeController
-    .addMeal()
+    .addMeal(req)
     .then((response) => {
       res.status(200).json(response);
     })
@@ -21,9 +21,9 @@ router.post("/", (_, res) => {
 // Retrives nutrition from ingredients and stores into database
 // Input: Food Ingredients
 // Output: Newly added nutrition macros
-router.post("/ingredient", (_, res) => {
+router.post("/ingredient", (req, res) => {
   recipeController
-  .addMeal()
+  .addIngredient(req)
   .then((response) => {
     res.status(200).json(response);
   })
@@ -31,3 +31,5 @@ router.post("/ingredient", (_, res) => {
     res.status(404).json(err);
   });
 });
+
+export default router;

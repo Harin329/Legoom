@@ -1,7 +1,7 @@
 import express from "express";
 import cors from "cors";
 import bodyParser from "body-parser";
-import recipeRouter from "./routes/recipe.js";
+import recipeRouter from "./src/routes/recipeRoute.js";
 
 const app = express();
 const port = 8080;

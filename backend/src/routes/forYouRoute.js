@@ -1,5 +1,5 @@
 import { Router } from "express";
-import ForYouController from "../controllers/forYouController.js";
+import ForYouController from "../controller/forYouController.js";
 
 const router = Router();
 const forYouController = new ForYouController();
@@ -45,3 +45,5 @@ router.get("/suggestion", (_, res) => {
     res.status(404).json(err);
   });
 });
+
+export default router;

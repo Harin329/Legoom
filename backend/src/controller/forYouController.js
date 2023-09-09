@@ -1,4 +1,4 @@
-import { ForYou } from "../models/forYou.js";
+import { ForYou } from "../model/forYou.js";
 
 export default class ForYouController {
     addMeal() {
