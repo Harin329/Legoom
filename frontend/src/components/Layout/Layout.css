@@ -1,0 +1,63 @@
+/* src/layout.css */
+.layout{
+    background-color: white;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 240px;
+    padding-right: 240px;
+}
+
+header {
+
+    display: flex; /* Add flex display to header */
+    justify-content: space-between; /* Align items to the left and right */
+    align-items: center; /* Center vertically */
+    background-size: 1536px 154px;
+    background-position: -10px 0px;
+    background-repeat: no-repeat;
+    border-radius: 50px;
+    color: white;
+  }
+  
+  .logo {
+    font-size: 24px;
+  }
+  
+  nav.menu {
+    background-image: url("./menuBar.png");
+    
+    background-size:contain;
+    /* background-position: -10px -10px; */
+    background-repeat: no-repeat;
+
+
+    /* list-style: none; */
+    /* display: flex; */
+
+  }
+
+
+  
+  nav ul li {
+    display: inline;
+    margin-right: 90px;
+    list-style-position: inside;
+    padding-left: 40px;
+  }
+  
+  nav.menu ul li a {
+        
+    color: white;
+    text-decoration: none;
+    font-family: nunito;
+    text-align: right;
+  }
+  
+  nav.menu ul li a:hover {
+    color: #FFA500;
+  }
+
+@font-face {
+  font-family: nunito;
+  src: url(../../fonts/Nunito/static/Nunito-Regular.ttf);
+}
