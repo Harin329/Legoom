@@ -26,7 +26,7 @@ function Collection() {
   return (
       <Layout>
       <div className="Collection">
-        <div className="title-collection">Your collections</div>
+        <div className="title-collection">Your Collections</div>
 
       <div class="wrapper">
         <div className="flex-container-collection">
@@ -34,30 +34,31 @@ function Collection() {
           {/* If there is no data, display a default set of boxes */}
           {collections.length === 0 && (
             <>
-              <div className="collection-box">
+              <div className="collection-box-image">
                 <img src="default-image-url-1" className='img-recommend' alt="Default Image 1" />
-                <div className='text-recommend'>Default collection 1</div>
               </div>
-              <div className="collection-box">
-                <img src="default-image-url-2" className='img-recommend' alt="Default Image 2" />
+              <div className="collection-box-text">
                 <div className='text-recommend'>Default collection 2</div>
               </div>
-              <div className="collection-box">
+              <div className="collection-box-image">
                 <img src="default-image-url-3" className='img-recommend' alt="Default Image 3" />
-                <div className='text-recommend'>Default collection 3</div>
               </div>
-              <div className="collection-box">
-                <img src="default-image-url-4" className='img-recommend' alt="Default Image 4" />
-                <div className='text-recommend'>Default collection 4</div>
+              <div className="collection-box-text">
+                  <div className='text-recommend'>Default collection 4</div>
               </div>
-              <div className="collection-box">
+              <div className="collection-box-text">
+                <div className='text-recommend'>Default collection 6</div>
+              </div>        
+              <div className="collection-box-image">
                 <img src="default-image-url-5" className='img-recommend' alt="Default Image 5" />
-                <div className='text-recommend'>Default collection 5</div>
               </div>
-              <div className="collection-box">
-                <img src="default-image-url-6" className='img-recommend' alt="Default Image 6" />
+              <div className="collection-box-text">
                 <div className='text-recommend'>Default collection 6</div>
               </div>
+              <div className="collection-box-image">
+                <img src="default-image-url-7" className='img-recommend' alt="Default Image 7" />
+              </div>
+
             </> 
           )}
         </div>

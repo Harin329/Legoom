@@ -25,10 +25,10 @@
 
   .flex-container-suggestion {
     /* background-color: green; */
-    width: 65vw;
+    width: 72vw;
     height: 60vh;
     border-radius: 10px;
-    gap: 10px;
+    gap: 30px;
     display: flex;
     flex-wrap: wrap;
     padding-right: 10vw;
@@ -61,7 +61,7 @@
     background: transparent;
     flex-shrink: 0;
     position: relative;
-    top: 2vh;
+    top: 6vh;
     right: 13vw;
     text-align: right;
   }
