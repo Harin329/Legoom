@@ -9,7 +9,7 @@ const forYouController = new ForYouController();
 // Output: Recently Consumed Recipes/Ingredients
 router.get("/history", (_, res) => {
   forYouController
-    .addMeal()
+    .getMeals()
     .then((response) => {
       res.status(200).json(response);
     })
@@ -23,7 +23,7 @@ router.get("/history", (_, res) => {
 // Output: Recommended Healthy Recipes
 router.get("/recommendation", (_, res) => {
   forYouController
-  .addMeal()
+  .getRecommendation()
   .then((response) => {
     res.status(200).json(response);
   })
@@ -37,7 +37,7 @@ router.get("/recommendation", (_, res) => {
 // Output: Suggestions For User
 router.get("/suggestion", (_, res) => {
   forYouController
-  .addMeal()
+  .getSuggestion()
   .then((response) => {
     res.status(200).json(response);
   })

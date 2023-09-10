@@ -9,6 +9,7 @@ BEGIN
 
 CREATE TABLE `nutrition` (
     `nutrition_id` VARCHAR(255) NOT NULL,
+    `nutrition_name` VARCHAR(255) NOT NULL,
     `user_id` VARCHAR(255) NOT NULL,
     `date` DATE NOT NULL,
     `calories` INT,
