@@ -2,9 +2,10 @@ import con from "../config/Database.js";
 import { v4 as uuidv4 } from "uuid";
 
 export class Recipe {
-  addMeal(userId, nutrition, result) {
-    con.query("CALL addMeal(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)", [
+  addMeal(userId, nutritionName, nutrition, result) {
+    con.query("CALL addMeal(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)", [
       uuidv4(),
+      nutritionName,
       userId,
       nutrition.calories.split(' ')[0] ?? 0,
       nutrition.carbohydrateContent.split(' ')[0] ?? 0,
@@ -17,6 +18,17 @@ export class Recipe {
       nutrition.fatContent.split(' ')[0] ?? 0,
       nutrition.unsaturatedFatContent.split(' ')[0] ?? 0
     ], (err, res) => {
+      if (err) {
+        console.log("error: ", err);
+        result(err, null);
+      } else {
+        result(null, res[0]);
+      }
+    });
+  }
+
+  getMeal(result) {
+    con.query("CALL getMeal()", (err, res) => {
       if (err) {
         console.log("error: ", err);
         result(err, null);
