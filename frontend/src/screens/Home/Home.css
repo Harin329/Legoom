@@ -1,36 +1,54 @@
 /* src/Home.css */
-.title {
-  width: 586px;
-  height: 48px;
-  position: absolute;
-  top: 338px; /* Change the top position to 338px */
-  left: 240px;
-  font-family: 'DM Serif Text', serif;
-  font-weight: 400;
-  font-size: 73px;
+.title-home {
+  /* background-color: green; */
   color: #3E3E3E;
-  letter-spacing: -2%;
-  line-height: 100.08px;
-  vertical-align: text-top;
+  font-family: DM Serif Text;
+  font-size: 73px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -1.46px;
+  position: relative;
+  top: 8vh;
 }
 
-.text {
+.text-home {
   width: 616px;
-  height: 200px;
-  position: absolute;
-  top: 320px;
-  left: 240px;
-  font-family: 'Nunito', sans-serif;
-  font-weight: 400;
-  font-size: 20px;
   color: #3E3E3E;
+  font-family: Nunito;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
   line-height: 50px;
+  position: relative;
+  top: 10vh;
 }
 
 .get-started {
   width: 238px;
   height: 64px;
-  position: absolute;
-  top: 580px;
-  left: 242px;
+  flex-shrink: 0;
+  position: relative;
+  top: 15vh;
+}
+
+.component{
+  display: flex;
+  /* padding-left: 10%; 
+  padding-right: 10%; */
+  align-items: center;
+
+}
+
+.home-image{
+  width: 600px;
+  height: 400px;
+  background: #D9D9D9;
+  flex-shrink: 0;
+  position: relative;
+  top: 15vh;
+}
+
+.info {
+  padding-left: 0vw;
 }

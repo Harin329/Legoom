@@ -1,61 +1,67 @@
 /* src/layout.css */
 .layout{
-    background-color: white;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    padding-left: 240px;
-    padding-right: 240px;
+    /* background-color: red; */
+    padding-top: 3%;
+    padding-bottom: 3%;
+    padding-left:10%;
+    padding-right: 10%;
+
 }
 
 header {
 
-    display: flex; /* Add flex display to header */
-    justify-content: space-between; /* Align items to the left and right */
-    align-items: center; /* Center vertically */
-    background-size: 1536px 154px;
-    background-position: -10px 0px;
-    background-repeat: no-repeat;
-    border-radius: 50px;
-    color: white;
-  }
-  
-  .logo {
-    font-size: 24px;
-  }
-  
-  nav.menu {
-    background-image: url("./menuBar.png");
-    
-    background-size:contain;
-    /* background-position: -10px -10px; */
-    background-repeat: no-repeat;
+  display: flex; /* Add flex display to header */
+  justify-content: space-between; /* Align items to the left and right */
+  align-items: center; /* Center vertically */
+  background-size: 1536px 154px;
+  background-position: -10px 0px;
+  background-repeat: no-repeat;
+  /* background-color: rgb(24, 10, 214); */
+}
 
+.logo {
+  font-size: 24px;
+}
 
-    /* list-style: none; */
-    /* display: flex; */
+nav ul li {
 
-  }
+  padding-right: 10%;
+  padding-left:  10%;
+  display: inline-block;
+  justify-content: space-around;
+  /* background-color: blue; */
+  position: relative;
+  bottom: 1vh;
+}
 
+nav.menu ul li a {
+  color: #FFF;
+  font-family: Nunito;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-decoration: none;
+  /* background-color: green; */
+}
+/* nav.menu ul li a {
+  color: white;
+  font-family: nunito;
+  text-decoration: none;
 
-  
-  nav ul li {
-    display: inline;
-    margin-right: 90px;
-    list-style-position: inside;
-    padding-left: 40px;
-  }
-  
-  nav.menu ul li a {
-        
-    color: white;
-    text-decoration: none;
-    font-family: nunito;
-    text-align: right;
-  }
-  
-  nav.menu ul li a:hover {
-    color: #FFA500;
-  }
+} */
+
+nav.menu ul li a:hover {
+  color: #FFA500;
+}
+
+.menu {
+  width: 60vw;
+  height: 6vh;
+  border-radius: 50px;
+  background: #FF7324;
+  flex-shrink: 0;
+}
 
 @font-face {
   font-family: nunito;

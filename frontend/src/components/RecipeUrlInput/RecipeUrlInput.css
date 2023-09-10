@@ -1,17 +1,40 @@
 /* RecipeUrlInput.css */
 
 .recipe-input-container {
-    width: 504px;
-    height: 35px;
-    margin-bottom: 20px;
-    border-radius: 10px;
-    padding: 17px 38px;
-    background-color: #F1F1F1; /* Gray background color */
+  width: 504px;
+  height: 5%;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  padding: 17px 38px;
+  background-color: #F1F1F1; /* Gray background color */
+  display: flex;
+  align-items: center;
+  position: relative;
+  top: 4vh;
+}
+
+.link-chain-container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+
+  max-width: 7%;
+}
+
+.link-chain-image {
+  width: 22px; /* Adjust the width as needed */
+  height: 22px; /* Adjust the height as needed */
+}
+
+.search-input-container {
+  flex: 4;
+  display: flex;
+
+  /* align-items: center; */
 }
 
 .search-input {
-  width: 100%;
-  height: 100%;
+  flex: 1;
   border: none;
   outline: none;
   background: transparent; /* Transparent input background */
@@ -20,33 +43,22 @@
   padding-left: 30px;
 }
 
+.search-input::placeholder {
+  color: #999; /* Placeholder text color */
+}
+
 .add-button {
-  position: absolute;
-  top: 50%;
-  right: 10px;
-  transform: translateY(-50%);
-  background-color: #E1E1E1; /* Slightly darker color for the button */
-  color: #fff; /* Text color for the button */
-  border: none;
-  border-radius: 5px;
+  display: flex;
   padding: 8px 12px;
-  cursor: pointer; /* Make the button clickable */
-  transition: background-color 0.3s; /* Add a transition effect */
+  border-radius: 5px;
+  background: #E1E1E1;
+  justify-content: center;
+  align-items: center;
+  font-family: Nunito;
+  border-color: transparent;
+  color: #4d4d4d;
 }
 
 .add-button:hover {
   background-color: #333; /* Darker color when hovering over the button */
 }
-
-  
-.link-chain-image {
-    position: absolute;
-    top: 50%;
-    left: 30px;
-    transform: translateY(-50%);
-    width: 22px; /* Adjust the width as needed */
-    height: 22px; /* Adjust the height as needed */
-  }
-    
-  
-  

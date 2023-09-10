@@ -1,0 +1,67 @@
+/* Suggestions.css */
+
+.Suggestions {
+    padding: 20px;
+  }
+  
+  .title-suggestions {
+    color: #3E3E3E;
+    font-family: DM Serif Text;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    position: relative;
+    top: 3vh;
+  }
+
+  .wrapper{
+    padding: 0px;
+    position: relative;
+    top: 5vh;
+    width: 75vw;
+    height: 60vh;
+  }
+
+  .flex-container-suggestion {
+    /* background-color: green; */
+    width: 65vw;
+    height: 60vh;
+    border-radius: 10px;
+    gap: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    padding-right: 10vw;
+    }
+
+  .suggestion-box {
+    border-radius: 10px;
+    width: 32vw;
+    height: 18vh;
+    background-color: #F1F1F1;    
+  }    
+
+.text-recommend {
+  text-align: right;
+  padding: 10px; /* Adjust the padding as needed */
+  margin:  auto;
+  background-color: #F1F1F1 ; /* Match the background color of suggestion-box */
+}
+
+/* Style for the default suggestion image */
+.img-recommend {
+  display: block;
+  margin: 0 auto; /* Center the image horizontally */
+  max-width: 100%;
+  max-height: 100%;
+}
+  
+.viewboard-image{
+    
+    background: transparent;
+    flex-shrink: 0;
+    position: relative;
+    top: 2vh;
+    right: 13vw;
+    text-align: right;
+  }

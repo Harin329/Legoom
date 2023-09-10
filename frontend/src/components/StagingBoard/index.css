@@ -1,0 +1,53 @@
+/* StagingBoard.css */
+
+/* Add this CSS for the StagingBoard component */
+.staging-board {
+    display: flex;
+    flex-direction: column; /* Arrange children vertically */
+    align-items: center; /* Center horizontally */
+    justify-content: flex-start; /* Align content to the top */
+    text-align: center; /* Center text within the container */
+    min-height: 1vh; /* Make the component take at least the full height of the viewport */
+    width: 80;
+    /* background-color: green; */
+    position: relative; /* Add relative positioning to make the overlay work */
+  
+  }
+  
+  .container {
+    width: 35vw;
+    height: 60vh;
+    border-radius: 10px;
+    background: #F1F1F1;
+    flex-shrink: 0;
+  }
+  
+  .add-Tummy {
+    width: 270px;
+    height: 64px;
+    padding-top: 5%;
+    display: flex;
+    margin-left: auto; 
+    /* background-color: blue; */
+  }
+/* Add styling for the "Protein," "Fat," and "Carbohydrate" sections */
+  .section {
+    margin-bottom: 5px; /* Add space between sections */
+    padding-left: 10%;
+    padding-top: 10%;
+    background-color: transparent; /* Gray background color for sections */
+    border-radius: 10px;
+    text-align: left;
+    width: 100%;
+  }
+  
+  .display {
+    color: #AEAEAE;
+    font-family: Nunito;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+  
+  

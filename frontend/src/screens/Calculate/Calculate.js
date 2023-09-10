@@ -1,19 +1,17 @@
-// src\screens\Calculate\Calculate.js
-
+// src/screens/Calculate/Calculate.js
 import React, { useState } from 'react';
 import Layout from '../../components/Layout/Layout';
 import './Calculate.css';
 import { RecipeUrlInput } from '../../components/RecipeUrlInput/RecipeUrlInput';
 import { SearchFood } from '../../components/SearchFood/SearchFood';
-import addToTummy from './addToTummy.png';
 import { MenuTags } from '../../components/MenuTags';
+import { StagingBoard } from '../../components/StagingBoard';
 
 function Calculate() {
-
   // State to store the input value
   const [recipeUrl, setRecipeUrl] = useState('');
-  const [searchFood, setsearchFood] = useState('');
-
+  const [searchFood, setSearchFood] = useState('');
+  const [addTummy, setAddTummy] = useState(false);
 
   // Function to handle changes in the input
   const handleRecipeUrlChange = (event) => {
@@ -21,32 +19,30 @@ function Calculate() {
   };
 
   const handleSearchFoodChange = (event) => {
-    setsearchFood(event.target.value);
+    setSearchFood(event.target.value);
   };
+
   return (
     <div>
       <Layout />
-      <div className='calculate'>
+      <div className="calculate">
+        <div className="text-calculate">
+          <div className="title-calculate">
+            Translate into Goodness
+          </div>
 
-        <div className='input'>
-          <h1>Translate into Goodness</h1>
-          {/* Input field for "Upload recipe URL" */}
-          <RecipeUrlInput recipeUrl={recipeUrl} handleRecipeUrlChange={handleRecipeUrlChange} />
-          {/* Input field for "Search Food" */}
-          <SearchFood searchFood={searchFood} handleSearchFoodChange={handleSearchFoodChange} />
-          <MenuTags />
+          <div className="inputs">
+            <RecipeUrlInput recipeUrl={recipeUrl} handleRecipeUrlChange={handleRecipeUrlChange} />
+            <SearchFood searchFood={searchFood} handleSearchFoodChange={handleSearchFoodChange} />
+            <MenuTags />
+          </div>
+
         </div>
-        <div className='nutrients'>
-          Protein
+        <div className="nutrients">
+          <StagingBoard addToTummy={addTummy} />
         </div>
       </div>
-
-      <button className="addToTummybutton">
-        <img src={addToTummy} alt="addtotummy" className='addToTummy' />
-      </button>
     </div>
-
-
   );
 }
 

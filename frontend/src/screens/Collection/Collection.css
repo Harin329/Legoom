@@ -1,0 +1,55 @@
+
+.Collection {
+    padding: 20px;
+  }
+  
+.title-collection {
+    color: #3E3E3E;
+    font-family: DM Serif Text;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    position: relative;
+    top: 3vh;
+  }
+
+.wrapper{
+    padding: 0px;
+    position: relative;
+    top: 5vh;
+    width: 75vw;
+    height: 60vh;
+  }
+
+.flex-container-collection {
+  /* background-color: green; */
+  width: 65vw;
+  height: 60vh;
+  border-radius: 10px;
+  gap: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  padding-right: 10vw;
+  }
+.collection-box {
+  border-radius: 10px;
+  width: 32vw;
+  height: 18vh;
+  background-color: #F1F1F1;    
+}    
+.text-collection
+ {
+    text-align: right;
+    padding: 10px;
+    background-color: #F1F1F1;
+  }
+  
+  /* Style for the collection image */
+  .img-collection {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    max-height: 100%;
+  }
+  

@@ -1,51 +1,60 @@
-/* RecipeUrlInput.css */
+/* SearchFood.css */
 
 .input-container {
-    width: 504px;
-    height: 35px;
-    border-radius: 10px;
-    padding: 17px 38px;
-    margin-bottom: 20px;
-    background-color: #F1F1F1; /* Gray background color */
+  display: flex;
+  align-items: center;
+  width: 504px;
+  height: 5%;
+  border-radius: 10px;
+  padding: 17px 38px;
+  margin-bottom: 20px;
+  background-color: #F1F1F1;
+  position: relative;
+  top: 4vh;
+}
+
+.carrot-container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  max-width: 7%;
+
+}
+
+.carrot-image {
+  width: 22px;
+  height: 22px;
+}
+
+.search-input-container {
+  flex: 4;
+  display: flex;
+  align-items: center;
 }
 
 .search-input {
-  width: 100%;
-  height: 100%;
+  flex: 1;
   border: none;
   outline: none;
-  background: transparent; /* Transparent input background */
+  background: transparent;
   font-size: 24px;
-  color: #333; /* Text color */
-  padding-left: 30px;
+  color: #333;
+  padding-left: 8px;
 }
+
+.search-input::placeholder {
+  color: #999;
+}
+
 .search-button {
-  position: absolute;
-  top: 50%;
-  right: 10px;
-  transform: translateY(-50%);
-  background-color: #E1E1E1; /* Slightly darker color for the button */
-  color: #fff; /* Text color for the button */
-  border: none;
-  border-radius: 5px;
-  padding: 8px 12px;
-  cursor: pointer; /* Make the button clickable */
-  transition: background-color 0.3s; /* Add a transition effect */
+  stroke-width: 2px;
+  stroke: #AEAEAE;
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+  border-color: transparent;
 }
 
-.add-button:hover {
-  background-color: #333; /* Darker color when hovering over the button */
+.search-button:hover {
+  background-color: #333;
 }
-
-  
-.carrot-image {
-    position: absolute;
-    top: 50%;
-    left: 30px;
-    transform: translateY(-50%);
-    width: 22px; /* Adjust the width as needed */
-    height: 22px; /* Adjust the height as needed */
-  }
-    
-  
-  

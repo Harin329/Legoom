@@ -1,31 +1,36 @@
 /* src/subpages/Calculate.css */
-.title {
-    width: 424px;
-    height: 55px;
-    margin-bottom: 20px;
-    font-family: 'DM Serif Text', serif;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 54.84px;
-    color: #3E3E3E;
-  }
-.addToTummy{
-  width: 238px;
-  height: 64px;
-  position: absolute;
-  top: 580px;
-  left: 1070px;
-}
-.calculate {
-  padding-left: 25%;
-  padding-right: 25%;
-  flex-direction: row;
-  display: flex;
+.title-calculate {
+  color: #3E3E3E;
+  font-family: DM Serif Text;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -1.46px;
+  position: relative;
+  top: 2vh;
+  /* background-color: blue; */
 }
 
-.input {
-  
+.inputs{
+
+}
+
+.calculate {
+  display: flex; /* Use flexbox to arrange components */
+  padding-left: 10%; /* Add left padding */
+  padding-right: 10%; /* Add right padding */
+  /* background-color: yellow; */
+}
+
+.text-calculate {
+  flex: 1; /* Allow input section to grow and take available space */
+  /* background-color: green; */
+
 }
 
 .nutrients {
+  margin-left: 20px; /* Add spacing between MenuTags and StagingBoard */
 }
+
+
